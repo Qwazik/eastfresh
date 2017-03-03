@@ -1,0 +1,375 @@
+// ========== main-footer =============
+.page__footer
+	.container
+		.main-footer.table
+			.table-cell.header-top__cart
+				ul.top-cart
+					li.top-cart__cart
+						a(href="#")
+							i.fa.fa-shopping-cart 
+							span В корзине
+					li.top-cart__sum
+						span.col 2
+						span 12 566 руб.
+				a(href="#").link Фруктово-овощные коробки
+			.table-cell
+				a(href="/").main-footer__logo Восточный <br> рейс
+			.table-cell
+				.main-footer__contacts
+					span +7 (977) 456 4 456
+					a(href="#callback").fancybox.btn.btn--green Мы перезвоним вам
+// ========== main-footer end =============
+// ========== popups =============
+#callback
+	.callback-popup
+		.h2 Обратный звонок
+		form(action="#")
+			input(type="hidden", name="subject", value="Форма обратного вызова")
+			label
+				input(type="name", placeholder="Имя")
+			label
+				input(type="phone", placeholder="Телефон")
+#customBoxPopup
+	.constructor
+		button.close х
+		.constructor-header.clearfix
+			h2 Соберите свою коробку на любой вкус
+			.constructor-cart
+				span В вашей корзине:
+				a(href="#orderPopup").fancybox-custom.constructor-cart__num
+					span.num 32
+					span.name Коробки
+				span.sep /
+				span.constructor-cart__price 12 566 руб.
+			span.info Указаны отпускные цены, за 1 кг./шт, руб.
+		.constructor-category
+			.constructor-category__name
+				span.name Овощи
+				button
+					i.fa 
+					| Развернуть
+			.constructor-category__body.clearfix
+				.row
+					-for(var i =1;i<13;i++)
+						.col-xs-3
+							.table.constructor-item
+								.table-row
+									.box-item__image
+										img(src="img/box-item"+i+".jpg", alt="")
+									.box-item__text
+										span.name Помидоры
+										span.type Розовые
+								.table-row
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span.price 1.500 руб
+							a(href="#").btn.btn--bdgreen В коробку
+				.row.col-xs-12
+					.text-area.text-area--red
+						.left Минимальная стоимость заказа составляет - <b>1 800 рублей</b>
+						.right До заказа осталось: 1700 рублей
+		.constructor-category
+			.constructor-category__name
+				span.name Фрукты
+				button
+					i.fa 
+					| Развернуть
+			.constructor-category__body.clearfix
+				.row
+					-for(var i =1;i<13;i++)
+						.col-xs-3
+							.table.constructor-item
+								.table-row
+									.box-item__image
+										img(src="img/box-item"+i+".jpg", alt="")
+									.box-item__text
+										span.name Помидоры
+										span.type Розовые
+								.table-row
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span.price 1.500 руб
+							a(href="#").btn.btn--bdgreen В коробку
+				.row.col-xs-12
+					.text-area.text-area--red
+						.left Минимальная стоимость заказа составляет - <b>1 800 рублей</b>
+						.right До заказа осталось: 1700 рублей
+		.constructor-category
+			.constructor-category__name
+				span.name Пряности
+				button
+					i.fa 
+					| Развернуть
+			.constructor-category__body.clearfix
+				.row
+					-for(var i =1;i<13;i++)
+						.col-xs-3
+							.table.constructor-item
+								.table-row
+									.box-item__image
+										img(src="img/box-item"+i+".jpg", alt="")
+									.box-item__text
+										span.name Помидоры
+										span.type Розовые
+								.table-row
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span.price 1.500 руб
+							a(href="#").btn.btn--bdgreen В коробку
+				.row.col-xs-12
+					.text-area.text-area--red
+						.left Минимальная стоимость заказа составляет - <b>1 800 рублей</b>
+						.right До заказа осталось: 1700 рублей
+		.constructor-category
+			.constructor-category__name
+				span.name Сухофрукты, орехи, сыр, чай
+				button
+					i.fa 
+					| Развернуть
+			.constructor-category__body.clearfix
+				.row
+					-for(var i =1;i<13;i++)
+						.col-xs-3
+							.table.constructor-item
+								.table-row
+									.box-item__image
+										img(src="img/box-item"+i+".jpg", alt="")
+									.box-item__text
+										span.name Помидоры
+										span.type Розовые
+								.table-row
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span.price 1.500 руб
+							a(href="#").btn.btn--bdgreen В коробку
+				.row.col-xs-12
+					.text-area.text-area--red
+						.left Минимальная стоимость заказа составляет - <b>1 800 рублей</b>
+						.right До заказа осталось: 1700 рублей
+#certificatesPopup.clearfix
+	button.close х
+	.h2 Выберите подарочный сетртификат
+	.certificates
+		.certificates__list
+			.col
+				.certificates__item
+					img(src="img/certificate1.png", alt="")
+					span 3000 <br> руб.
+				a(href="#").btn.btn--orange Оформить заказ
+			.col
+				.certificates__item
+					img(src="img/certificate2.png", alt="")
+					span 5000 <br> руб.
+				a(href="#").btn.btn--orange Оформить заказ
+			.col
+				.certificates__item
+					img(src="img/certificate3.png", alt="")
+					span 10000 <br> руб.
+				a(href="#").btn.btn--orange Оформить заказ
+#orderPopup
+	.order-form
+		.h2 Ваша корзина
+		button.close х
+		form(action="")
+			.order-form__body.clearfix
+				.col
+					.order-form__header
+						span Коробка 1 малая коробка
+						span.price 6230 руб.
+					.order-form__list
+						ul.col
+							li Помидоры узбекские
+							li Огурцы бакинские
+							li Капуста молодая
+							li Капуста цветная
+							li Свекла столовая красная
+							li Редька зеленая узбекская
+						ul.col.custom-box
+							li Помидоры узбекские
+							li Огурцы бакинские
+							li Капуста молодая
+							li Капуста цветная
+							li Свекла столовая красная
+							li Редька зеленая узбекская
+				.col
+					.order-form__header
+						span Коробка 1 Своя коробка
+						span.price 7770 руб.
+					.order-form__list
+						ul.col.custom-box
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+						ul.col.custom-box
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							li
+								.table
+									.table-cell
+										.input--col
+											input(type="text" value="0")
+											.input--col__controls.fa
+												button 
+												button 
+									.table-cell
+										span Помидоры узбекские
+										a(href="#").close х
+										.price 2569р.
+							
+			.text-area.text-area--red
+				.left Минимальная стоимость заказа составляет - <b>1 800 рублей</b>
+				.right До заказа осталось: 1700 рублей
+			.order-form__footer.clearfix
+				.left Итого к оплате: <span class="sum">6230 руб.</span>
+				.right
+					input(type="reset" value="Очистить корзину").btn.btn--gray 
+					input(type="submit" value="Оформить заказ").btn.btn--orange 
+
+// ========== popups end =========

@@ -1,4 +1,251 @@
 extends _template
 
 block main
-	
+	// first screen 
+	.page__first-screen
+		.container
+			h1 Всегда свежие овощи и фрукты
+			p из Узбекистана с доставкой на дом
+			a(href="#").btn.btn--orange Выбрать коробку
+			span.tobottom.fa 
+	// first screen end
+	// features
+	.page__features
+		.container
+			h2.ta-left Восточный рейс это лучшее что можно себе позволить
+			ul.features
+				li.features__item
+					.left 
+						span.icon.icon-veg
+					.right 
+						p Овощи и фрукты из Узбекистана отличаются высоким качеством, они богаты полезными и необходимыми для человека витаминами, минералами и микроэлементами
+				li.features__item
+					.left 
+						span.icon.icon-weather
+					.right 
+						p Благодаря сочетанию редких природных ресурсов, почвы и климата, большинство из самых здоровых и вкусных овощей и фруктов выращиваются в Узбекистане
+				li.features__item
+					.left 
+						span.icon.icon-dishes
+					.right 
+						p Мы собрали для Вас коллекцию из самых вкусных овощей и фруктов,  отобранных с особой заботой с лучших базаров Узбекистана, бережно упакованных и доставленных к Вам на дом Восточным рейсом
+	// features end
+	// boxes
+	.page__boxes
+		.container
+			.header
+				h2 Зимний ассортимент
+				p фруктово-овощных коробок
+			.box-block
+				.box-nav
+					.row
+						.col-xs-3
+							.box-nav__item(data-type="small").active
+								a(href="#").box-nav__cart 
+								span.name Малая <br>коробка
+								span.price  2 900,00 руб
+								.box-nav__bottom.weight 6 кг
+						.col-xs-3
+							.box-nav__item(data-type="medium")
+								a(href="#").box-nav__cart 
+								span.name Средняя <br>коробка
+								span.price  4 900,00 руб
+								.box-nav__bottom.weight 8 кг
+						.col-xs-3
+							.box-nav__item(data-type="big")
+								a(href="#").box-nav__cart 
+								span.name Большая <br>коробка
+								span.price 6 900,00 руб
+								.box-nav__bottom.weight 10 кг
+						.col-xs-3
+							.box-nav__item(data-type="custom")
+								.fruits
+									img(src="", alt="")
+								span.name Собери свою <br> коробку
+								.box-nav__bottom
+									a(href="#customBoxPopup").fancybox-custom.btn.btn--orange Собрать
+								span.price
+				.box-inner
+					.box-inner__content#smallBox.active
+						h2 Ассортимент малой коробки
+						ul.row.box-inner__list.clearfix
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(1, 'Помидоры', 'Розовые', '')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(2, 'Огурцы', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(3, 'Перец болгарский', 'Зеленый', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(4, 'Кинза', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(5, 'Укроп', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(6, 'Райхон-Базилик', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(7, 'Редиска', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(8, 'Чеснок молодой', '3 головки', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(9, 'Лук зеленый молодой', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(10, 'Гранаты', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(11, 'Хурма и / или виноград ', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(12, 'Лимоны', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(13, 'Изюм сорта КишМиш', 'Черный', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(14, 'Абрикосовые косточки в соли', 'Шурдонак', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(15, 'Стручковый перец', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(16, 'Айва и зира', '', '1,500 гр.')
+					.box-inner__content#mediumBox
+						h2 Ассортимент средней коробки
+						ul.row.box-inner__list.clearfix
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(1, 'Помидоры', 'Розовые', '')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(2, 'Огурцы', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(3, 'Перец болгарский', 'Зеленый', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(4, 'Кинза', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(5, 'Укроп', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(6, 'Райхон-Базилик', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(7, 'Редиска', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(8, 'Чеснок молодой', '3 головки', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(9, 'Лук зеленый молодой', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(10, 'Гранаты', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(11, 'Хурма и / или виноград ', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(12, 'Лимоны', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(13, 'Изюм сорта КишМиш', 'Черный', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(14, 'Абрикосовые косточки в соли', 'Шурдонак', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(15, 'Стручковый перец', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(16, 'Айва и зира', '', '1,500 гр.')
+					.box-inner__content#bigBox
+						h2 Ассортимент большой коробки
+						ul.row.box-inner__list.clearfix
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(1, 'Помидоры', 'Розовые', '')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(2, 'Огурцы', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(3, 'Перец болгарский', 'Зеленый', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(4, 'Кинза', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(5, 'Укроп', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(6, 'Райхон-Базилик', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(7, 'Редиска', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(8, 'Чеснок молодой', '3 головки', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(9, 'Лук зеленый молодой', 'Пучок', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(10, 'Гранаты', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(11, 'Хурма и / или виноград ', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(12, 'Лимоны', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(13, 'Изюм сорта КишМиш', 'Черный', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(14, 'Абрикосовые косточки в соли', 'Шурдонак', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(15, 'Стручковый перец', '', '1,500 гр.')
+							li.col-lg-3.col-sm-4.col-xs-6
+								+boxItem(16, 'Айва и зира', '', '1,500 гр.')
+				.box-footer
+					span Заказав три коробки овощей и фруктов в неделю
+					span Четвертую коробку массой в 6кг вы получите
+					span.orange бесплатно
+	// boxes end
+	.color-white.forplov
+		.container
+			h2 Набор для плова
+			span Рис, морковь, лук, специи, горох, изюм
+			a(href="#").btn.btn--orange Купить коробку
+	// features
+	.page__features.features2
+		.container
+			h2 С нами практично, полезно и вкусно
+			ul.features.row
+				li.col-sm-4: .features__item
+						.features__image: img(src="img/features2-1.png", alt="")
+						p Мы работаем <b>без праздников</b> и<br> <b>выходных</b>. Все ради того, чтобы наш<br> клиент был доволен!
+				li.col-sm-4: .features__item
+						.features__image: img(src="img/features2-2.png", alt="")
+						p Наше конкурентное преимущество в том, что мы в 97% случаев <b>доставляем Ваш заказ раньше означенного нами же срока</b>
+				li.col-sm-4: .features__item
+						.features__image: img(src="img/features2-3.png", alt="")
+						p Каждое предложение или пожелание нашего клиента выносится на рассмотрение коллективу нашей команды, а потому мы действительно <b>делаем сервис, ориентированный на клиента.</b>
+	// features end
+	// difference
+	.page__difference
+		.container			
+			p Ключевым отличием компании «Восточный рейс» от других компаний, занимающихся доставкой овощей и фруктов оптовыми партиями, является то, что Вы получаете всегда свежие овощи и фрукты, доставленные к Вам на дом прямыми рейсами
+	// difference end
+	// certificate
+	.page__certificate
+		.container
+			.table
+				.table-cell: a(href="#certificatesPopup").fancybox-custom: img(src="img/certificate.png", alt="")
+				.table-cell
+					span.header Подарите своим близким сертификат здоровой еды
+					.price
+						span 3000
+						span 5000
+						span 10000
+	// certificate end
+	// delandpay
+	.page__delandpay
+		h2 доставка и оплата
+		.container
+			.row
+				.col-md-4.col-sm-12
+					.delandpay-item
+						.header доставка
+						.body: .inner
+							p
+								span.color-green От 2 900 руб.
+								span.italic бесплатно
+							p по Москве и ближайшему Подмосковью, а также Санкт-Петербург 
+							br
+							p
+								span.color-green 450 руб.
+								span.italic450 В остальных случаях
+				.col-md-4.col-sm-12
+					.delandpay-item
+						.header оплата
+						.body: .inner
+							p
+								span.color-green наличными курьеру
+								span.italic при доставке
+							p Дополнительные способы оплаты Вы можете обсудить с консультантом компании Восточный рейс при оформлении заказа
+							br
+							a(href="#").btn.btn--green Мы перезвоним вам
+
+				.col-md-4.col-sm-12
+					.delandpay-item
+						.header бонусы
+						.body: .inner
+							p Уже с первым заказом Вы получаете на свой бонусный накопительный счет, привязанный к Вашему номеру телефона баллы
+							br
+							p.color-green.italic Которые вскоре сможете обменять на свежие овощи и фрукты
+	// delandpay end

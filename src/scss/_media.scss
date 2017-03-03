@@ -1,0 +1,444 @@
+@media screen and (max-width: 1199px){
+	h1,.h1{
+		font-size: 65px;
+	}
+	h1 + p, .h1 + p{
+		font-size: 56px;
+		margin-bottom: 50px;
+	}
+	h2, .h2{
+		font-size: 57px;
+	}
+	.page__first-screen{
+		padding: 150px 0 250px;
+		.tobottom{
+			width: 62px;
+			height: 62px;
+			line-height: 62px;
+			font-size: 18px;
+			margin-left: -31px;
+		}
+	}
+	.page__features{
+		h2{
+			margin-bottom: 50px;
+		}
+		.container{
+			padding-left: 380px;
+		}
+		.vilka{
+			width: 500px;
+		}
+	}
+	.page__difference{
+		height: 600px;
+	}
+	.delandpay-item{
+		.inner{
+			padding: 15px 25px;
+		}
+	}
+	.box-nav{
+		br{
+			display: inline-block;
+		}
+		&__cart{
+			bottom: 40px;
+		}
+		&__item{
+    		background-size: 90% auto;
+		}
+	}
+	.fancybox-custom-popup{
+		// display: none;
+		.fancybox-skin{
+			border-radius: 0;
+			background: none;
+			
+		}
+		.fancybox-inner{
+			min-width: 0;
+			max-width: none;
+		}
+		 &.fancybox-wrap{
+			min-width: 0;
+			max-width: none;
+		}
+	}
+}
+@media screen and (max-width: 992px){
+	#customBoxPopup .constructor-header h2, #customBoxPopup .constructor-header .info{
+		font-size: 30px;
+	}
+	#customBoxPopup .constructor-category__body .col-xs-3{
+		width: 33.3333%;
+	}
+	.constructor-category__name{
+		padding-right: 240px;
+	}
+	// .page__features.features2{
+	// 	background: none;
+	// 	background-image: url('../img/texture-brown.jpg');
+	// }
+
+	h1,.h1{
+
+	}
+	.btn{
+		&--green{
+			padding: 10px 20px;
+			font-size: 15px;
+		}
+	}
+	.header-top__contacts span, .main-footer__contacts span{
+		font-size: 22px;
+	}
+	.page__first-screen{
+		padding: 100px 0px 200px;
+		.tobottom{
+			bottom: 70px;
+		}
+	}
+	.page__header.fixed .table-cell{
+		white-space: normal;
+		margin: 5px 0;
+	}
+	.page__header{
+		
+		&.fixed{
+			padding: 10px 0;
+			height: auto;
+			.header-top{
+				.table-cell{
+					width: auto;
+				}
+			}
+			.header-top__logo{
+				display: none;
+			}
+		}
+	}
+	.page__header .header-top{
+		&__logo{
+			width: 233px;
+			font-size: 45px;
+		}
+	}
+	.page__features{
+		background-image: url('../img/texture-brown.jpg');
+		background-position: center center;
+		background-repeat: repeat;
+		min-height: 0;
+		.container{
+			padding-left: 15px;
+		}
+	}
+	.vilka{
+		display: none;
+	}
+	.page__certificate{
+		img{
+			width: 200px;
+		}
+		.table-cell{
+			&:first-child{
+				padding-right: 30px;
+			}
+		}
+	}
+	.box-nav{
+		.row{
+			margin: -5px;
+		}
+		[class*="col"]{
+			padding: 0 5px;
+		}
+		&__item{
+			height: 280px;
+			
+			background-size: 100%;
+			.name{
+				font-size: 40px;
+				line-height: 38px;
+				margin-bottom: 7px;
+			}
+			.price{
+				font-size: 18px;
+			}
+			&[data-type="custom"]{
+				padding-top: 45px;
+			}
+		}
+	}
+	.box-inner{
+		padding-bottom: 0px;
+		&__list{
+			li{
+				margin: 5px 0;
+			}
+		}
+	}
+	.delandpay-item{
+		margin-bottom: 40px;
+	}
+	.main-footer__logo{
+		margin: 0 15px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.constructor-category__name{
+		padding-right: 30px;
+		font-size: 25px;
+	}
+	.constructor-category__name button{
+		right: 20px;
+		font-size: 0;
+		.fa{
+			font-size: 25px;
+			line-height: 60px;
+		}
+	}
+	#customBoxPopup .constructor-category__body{
+		height: 500px;
+		overflow: auto;
+	}
+	#customBoxPopup .constructor-category__body .col-xs-3{
+		width: 50%;
+	}
+	#customBoxPopup .constructor-cart{
+		float: left;
+	}
+	h1, .h1{
+		font-size: 55px;
+		line-height: 1em;
+	}
+	h1 + p, .h1 + p{
+		font-size: 56px;
+		line-height: 50px;
+	}
+	h2, .h2{
+		font-size: 45px;
+	}
+	.header-top,.page__footer{
+		display: block;
+		.table-cell{
+			display: block;
+			width: 100%;
+			text-align: center !important;
+			// text-align-a: center;
+		}
+	}
+	.page__header{
+		padding: 40px 0;
+		padding-top: 170px;
+		.header-top__logo{
+			top: 0px;
+			position: absolute;
+			left: 50%;
+			margin-left: -116px;
+		}
+	}
+	.page__certificate{
+		.table,.table-cell{
+			text-align: center;
+			display: block;
+			padding: 0 !important;
+		}
+		span{
+			display: inline-block;
+			margin: 0 10px !important;
+		}
+	}
+	.page__footer{
+		padding: 20px 0;
+		.main-footer__logo, .header-top__cart{
+			display: none;
+		}
+		.main-footer__contacts{
+			span{
+				display: inline-block;
+				margin: 10px 20px;vertical-align: middle;
+			}
+		}
+	}
+	.box-nav{
+		.col-xs-3{
+			width: 100%;
+		}
+		&__item{
+			border: 1px solid #C5E434;
+			padding: 20px 10px;
+			text-align: left;
+			background: none !important;
+			background-color: white !important;
+			height: auto;
+			br{
+				display: none;
+			}
+			.name,.price,.weight{
+				display: inline-block;
+				vertical-align: middle;
+				margin: 10px !important;
+				line-height: normal;
+			}
+			.name{
+
+			}
+			&[data-type="custom"]{
+				.price{
+					display: none;
+				}
+				padding: 10px;
+				.name{
+					text-indent: 0;
+					margin-bottom: 20px !important;
+				}
+				text-align: center !important;
+			}
+		}
+		&__cart{
+			left: auto;
+			right: 10px;
+			text-align: center;
+			bottom: 10px;
+			width: 50px;
+			height: 50px;
+			font-size: 15px;
+			line-height: 50px;
+			
+		}
+		&__bottom{
+			position: static;
+		}
+	}
+	.box-footer span:first-child{
+		font-size: 60px;
+		line-height: 55px;
+	}
+	.certificates{
+		.col{
+			width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+	#customBoxPopup .constructor-header{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.constructor-category__name{
+		padding-right: 30px;
+		font-size: 16px;
+		button{
+			right: 0;
+		}
+	}
+	#customBoxPopup .constructor-category__body .col-xs-3{
+		width: 100%;
+		text-align: center;
+		.table-cell .price{
+			display: block;
+			text-align: left;
+		}
+	}
+	h1, .h1{
+		font-size: 40px;
+	}
+	h1 + p, .h1 + p{
+		font-size: 40px;
+		line-height: 40px;
+	}
+	h2, .h2, .h2{
+		font-size: 35px;
+		text-align: center;
+	}
+	.page__header.fixed{
+		a[href="#callback"]{
+			font-size: 0;
+			border-radius: 50%;
+			width: 35px;
+			height: 35px;
+			line-height: 0;
+			padding: 0;
+			vertical-align: middle;
+				line-height: 35px;
+			&:after{
+				vertical-align: middle;
+				content: '';
+				font-family: FontAwesome;
+				font-size: 16px;
+				color: #B8E500;
+			}
+			&:hover{
+				&:after{
+					color: white;
+				}
+			}
+		}
+	}
+	.page__features h2, .page__features .h2{
+		text-align: center;
+		text-align-last: center;
+	}
+	h2 + p, .h2 + p{
+		font-size: 22px;
+	}
+	.page__boxes .header{
+		margin-bottom: 50px;
+	}
+	.features{
+		&__item{
+			display: block;
+			.left,.right{
+				display: block;
+				text-align: center;
+				padding: 0;
+			}
+			.left{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.box-inner{
+		&__list{
+			height: 500px;
+			overflow: auto;
+			li{
+				width: 100%;
+			}
+		}
+	}
+	.page__difference{
+		height: 500px;
+		p{
+			font-size: 19px;
+			bottom: 50px;
+		}
+	}
+	.box-footer span:first-child{
+		margin-top: 30px;
+	}
+	.box-footer span:first-child, .page__certificate .header{
+		font-size: 40px;
+		line-height: 1em;
+	}
+	.box-footer span{
+		font-size: 20px;
+	}
+	.page__delandpay{
+		padding: 50px 0;
+		h2{
+			margin-bottom: 30px;
+		}
+	}
+	.top-cart{
+		font-size: 16px;
+	}
+	.page__header.fixed .header-top__contacts span{
+		font-size: 18px;
+		vertical-align: middle;
+	}
+}

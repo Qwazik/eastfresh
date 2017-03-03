@@ -1,3 +1,31 @@
 // header
 .page__header
 	.container
+		.header-top.table
+			.table-cell.header-top__cart
+				ul.top-cart
+					li.top-cart__cart
+						a(href="#")
+							i.fa.fa-shopping-cart 
+							span В корзине
+					li.top-cart__sum
+						span.col 2
+						span 12 566 руб.
+				a(href="#").link Фруктово-овощные коробки
+			.table-cell
+				a(href="/").header-top__logo 
+					span Восточный рейс
+			.table-cell
+				.header-top__contacts
+					span +7 (977) 456 4 456
+					a(href="#callback").fancybox.btn.btn--green Мы перезвоним вам
+// header end
+
+mixin boxItem(num, name, type, weight)
+	.box-item
+		.box-item__image
+			img(src="img/box-item"+num+".jpg", alt="")
+		.box-item__text
+			span.name=name
+			span.type=type
+			span.weight=weight
